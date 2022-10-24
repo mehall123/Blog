@@ -1,0 +1,17 @@
+<%- include('partials/head.ejs') %>
+        <div class="content">
+       
+        <form action="/updatepost" method="post">
+          Author<input required type="text" id="author" name="author" value="<%= postsList.author %>">
+          Heading<input required type="text" id="heading" name="heading" value="<%= postsList.heading %>">
+          Content<textarea required id="post" name="content" style="height:400px"><%= postsList.content %></textarea>
+          <button name="button" type="submit" value="<%= postsList.id %>">Submit Update</button>
+          
+      </form>
+        </div>
+    
+   
+
+</div>
+
+<%- include('partials/foot.ejs') %>

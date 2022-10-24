@@ -1,0 +1,15 @@
+<%- include('partials/head.ejs') %>
+  <div class="content">
+        <div class="container">
+            <form action="/new" method="post">
+             Author<input required type="text" id="author" name="author" placeholder="The authors name">
+              Heading<input required type="text" id="heading" name="heading" placeholder="The heading of your post">
+              Content<textarea required id="post" name="content" placeholder="Your post goes here" style="height:400px"></textarea>       
+              <input type="submit" value="Submit Your Post">
+
+            </form>
+          </div>
+      </div>
+
+
+<%- include('partials/foot.ejs') %>
